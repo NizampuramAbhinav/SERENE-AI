@@ -1,0 +1,13 @@
+{
+    "test_samples": 5427,
+    "emotion_classes": 28,
+    "threshold": 0.6,
+    "micro_precision": 0.5590433482810164,
+    "micro_recall": 0.5909306367514615,
+    "micro_f1": 0.5745448959213457,
+    "macro_precision": 0.5116533315203282,
+    "macro_recall": 0.5747296174397706,
+    "macro_f1": 0.5241374878451597,
+    "weighted_f1": 0.5735936212838287,
+    "exact_match_accuracy": 0.4092500460659665
+}

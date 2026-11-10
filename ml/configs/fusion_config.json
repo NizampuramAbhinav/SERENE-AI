@@ -1,0 +1,44 @@
+{
+  "canonical_emotions": [
+    "anger",
+    "disgust",
+    "fear",
+    "joy",
+    "neutral",
+    "sadness",
+    "surprise"
+  ],
+  "modality_weights": {
+    "text": 0.40,
+    "face": 0.35,
+    "voice": 0.25
+  },
+  "text_to_canonical": {
+    "anger": ["anger", "annoyance", "disapproval"],
+    "disgust": ["disgust"],
+    "fear": ["fear", "nervousness"],
+    "joy": ["joy", "amusement", "excitement", "gratitude", "love", "optimism", "pride", "relief", "admiration"],
+    "neutral": ["neutral", "realization", "curiosity"],
+    "sadness": ["sadness", "disappointment", "grief", "remorse", "embarrassment"],
+    "surprise": ["surprise"]
+  },
+  "face_to_canonical": {
+    "angry": "anger",
+    "disgust": "disgust",
+    "fear": "fear",
+    "happy": "joy",
+    "neutral": "neutral",
+    "sad": "sadness",
+    "surprise": "surprise"
+  },
+  "voice_to_canonical": {
+    "angry": "anger",
+    "disgust": "disgust",
+    "fearful": "fear",
+    "happy": "joy",
+    "neutral": "neutral",
+    "calm": "neutral",
+    "sad": "sadness",
+    "surprised": "surprise"
+  }
+}

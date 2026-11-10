@@ -1,0 +1,25 @@
+{
+  "model_name_or_path": "facebook/wav2vec2-base",
+  "dataset": "ravdess",
+  "num_classes": 8,
+  "classes": ["neutral", "calm", "happy", "sad", "angry", "fearful", "disgust", "surprised"],
+  "target_sample_rate": 16000,
+  "max_duration_seconds": 3.5,
+  "max_audio_samples": 56000,
+  "seed": 42,
+  "batch_size": 16,
+  "learning_rate": 1e-4,
+  "num_train_epochs": 15,
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01,
+  "fp16": true,
+  "actor_disjoint_split": {
+    "train_actors": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16"],
+    "val_actors": ["17", "18", "19", "20"],
+    "test_actors": ["21", "22", "23", "24"]
+  },
+  "evaluation_metrics": ["unweighted_average_recall", "weighted_accuracy", "confusion_matrix"],
+  "canonical_mapping": {
+    "calm": "neutral"
+  }
+}

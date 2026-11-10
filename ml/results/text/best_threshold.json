@@ -1,0 +1,9 @@
+{
+    "selected_threshold": 0.6,
+    "selection_metric": "micro_f1",
+    "development_samples": 5426,
+    "micro_f1": 0.5749423520368947,
+    "macro_f1": 0.5182931106646257,
+    "micro_precision": 0.5641025641025641,
+    "micro_recall": 0.5862068965517241
+}

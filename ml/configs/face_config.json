@@ -1,0 +1,33 @@
+{
+  "dataset": "fer2013",
+  "num_classes": 7,
+  "classes": ["angry", "disgust", "fear", "happy", "neutral", "sad", "surprise"],
+  "seed": 42,
+  "imbalance_handling": "class_weighted_loss_and_sampler",
+  "models": {
+    "mobilenet_v3": {
+      "architecture": "mobilenet_v3_large",
+      "pretrained_weights": "IMAGENET1K_V2",
+      "input_channels": 3,
+      "input_size": 48,
+      "batch_size": 64,
+      "learning_rate": 1e-4,
+      "weight_decay": 1e-4,
+      "num_epochs": 15,
+      "optimizer": "AdamW",
+      "scheduler": "CosineAnnealingLR"
+    },
+    "vision_transformer": {
+      "architecture": "google/vit-base-patch16-224-in21k",
+      "input_channels": 3,
+      "input_size": 224,
+      "batch_size": 32,
+      "learning_rate": 2e-5,
+      "weight_decay": 0.01,
+      "num_epochs": 10,
+      "warmup_ratio": 0.1,
+      "optimizer": "AdamW"
+    }
+  },
+  "metrics": ["accuracy", "macro_f1", "weighted_f1", "confusion_matrix"]
+}

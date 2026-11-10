@@ -1,0 +1,11 @@
+{
+    "test_images": 7178,
+    "emotion_classes": 7,
+    "accuracy": 0.6741432153803287,
+    "precision_macro": 0.6734274183585466,
+    "recall_macro": 0.6635818204777006,
+    "f1_macro": 0.6670186290880448,
+    "precision_weighted": 0.6795388840363537,
+    "recall_weighted": 0.6741432153803287,
+    "f1_weighted": 0.6751560394838958
+}

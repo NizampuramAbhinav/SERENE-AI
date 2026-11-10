@@ -1,0 +1,30 @@
+{
+  "model_name_or_path": "distilbert/distilroberta-base",
+  "dataset": "goemotions",
+  "num_labels": 28,
+  "problem_type": "multi_label_classification",
+  "max_seq_length": 128,
+  "batch_size": 32,
+  "learning_rate": 3e-5,
+  "weight_decay": 0.01,
+  "num_train_epochs": 5,
+  "warmup_ratio": 0.1,
+  "fp16": true,
+  "seed": 42,
+  "evaluation_strategy": "epoch",
+  "save_strategy": "epoch",
+  "metric_for_best_model": "macro_f1",
+  "greater_is_better": true,
+  "loss_function": "BCEWithLogitsLoss",
+  "pos_weight_clamp_min": 1.0,
+  "pos_weight_clamp_max": 10.0,
+  "decision_threshold": 0.5,
+  "classes": [
+    "admiration", "amusement", "anger", "annoyance", "approval",
+    "caring", "confusion", "curiosity", "desire", "disappointment",
+    "disapproval", "disgust", "embarrassment", "excitement", "fear",
+    "gratitude", "grief", "joy", "love", "nervousness",
+    "optimism", "pride", "realization", "relief", "remorse",
+    "sadness", "surprise", "neutral"
+  ]
+}
